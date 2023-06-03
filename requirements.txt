@@ -1,0 +1,8 @@
+pandas
+Pillow
+natsort
+matplotlib
+scikit-image
+tqdm
+numpy
+shapely
