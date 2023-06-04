@@ -1,7 +1,5 @@
 FROM cytomine/software-python3-base
 
-#WORKDIR /Users/anuradha.kar/Documents/python_scripts/docker_tests/docker_py1
-
 COPY requirements.txt requirements.txt
 
 RUN pip install \
@@ -36,7 +34,7 @@ ADD unet_parts.py /src/unet_parts.py
 
 ADD best_model_bg10.pth /src/best_model_bg10.pth
 ADD app_model.py /src/app_model.py
-
+ADD descriptor.json /src/descriptor.json
 ADD . /src/preds
 
 
